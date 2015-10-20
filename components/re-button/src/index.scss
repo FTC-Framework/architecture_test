@@ -1,9 +1,13 @@
 $sui-btn-color: green !default;
 $sui-btn-primary: red;
 
-@mixin sui-Btn--extend {
-    font-weight: 900;
-
+@mixin sui-Btn--extend ($hasTheme: true) {
+	@if $hasTheme {
+	    font-weight: 900;
+	    &--big {
+	    	font-size: 50px;
+	    }
+	}
 };
 
 @import '../node-modules/sui-button/src/index';
