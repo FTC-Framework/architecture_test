@@ -1,3 +1,25 @@
 $theme: true;
 
-@import 'components/re-button/src/index';
+// SUI COMPONENTS
+// --------------------------------------------------
+// @import 'node_modules/@schibstedspain/sui-button/sui-button';
+@import 'node_modules/@schibstedspain/re-button/re-button';
+// @import 'node_modules/@schibstedspain/mt-button/mt-button';
+// @import 'node_modules/@schibstedspain/ij-button/ij-button';
+
+
+// CUSTOM COMPONENTS
+// --------------------------------------------------
+@import 'custom-components/re-customComponent/re-customComponent';
+// @import 'legacy-shit/old-fucking-styles';
+
+
+/*
+A REVISAR:
+
+- Un comoponente solo puede llamarse en un tema por vez (no hay namespaces para los temas)
+- Revisar line-height / padding-vertical / height de los botones.
+- Revisar nombres de variables
+- TO-DO: Ejemplo de variables globales en el theme.
+
+*/

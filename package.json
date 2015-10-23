@@ -4,15 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-
-    "clean:dist": "rm -rf ./dist/*",
-    "predist": "npm run clean:dist -s",
-    "dist": "npm run dist:scripts && npm run dist:styles",
-    "dist:styles": "node-sass src/index.scss dist/sui-card.css --importer ./scripts/importer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
+   "dependencies": {
+    "@schibstedspain/re-button": "latest"
+  },
   "devDependencies": {
     "beepbeep": "^1.2.0",
     "browser-sync": "^2.9.11",
